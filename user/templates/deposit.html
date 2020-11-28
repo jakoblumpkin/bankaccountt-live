@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% block content %}
+    <div style="position:relative; top:10%;">
+        <h2 style="font-size:200%; position:absolute; right:30%;">How much would you like to deposit? :</h2>
+        <form method="POST" action="depositmoney/">{% csrf_token %}
+            <input style="float:right;"type="text" name="title" placeholder="$$Deposit amount">
+            <button style="float:right; position: relative;  left:70%;" class="button-large">Submit</button>
+        </form>
+    </div>
+    {% endblock content %}
+</head>
+<body>
+
+</body>
+</html>

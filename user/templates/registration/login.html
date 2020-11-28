@@ -1,0 +1,19 @@
+{% extends 'index.html'%}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{%block content%}
+<form method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button class="login" type="submit">Login </button>
+    <p style="font-size:95%;">Don't have an account! click <a href="/register">here</a> to register!</p>
+</form>
+{% endblock content %}
+</body>
+</html>
