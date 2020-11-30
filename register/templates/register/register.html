@@ -3,7 +3,7 @@
 {% block content %}
 <h1 style="position:relative; bottom:1%;">Create a account </h1>
 <hr>
-<form method="POST" action="/">
+<form method="POST" action="home/">
     {% csrf_token %}
     {{ form|crispy }}
     <button type="submit">Create Account</button>
