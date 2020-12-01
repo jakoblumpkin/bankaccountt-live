@@ -10,10 +10,10 @@
 {% block content %}
 
 <div style="position:relative; top:10%;">
-    <h2 style="font-size:200%; position:absolute; right:30%; " >How much would you like to withdraw?: </h2>
+    <h2 style="font-size:200%; position:relative; left:2%; top:0%;" >How much would you like to withdraw?: </h2>
         <form method="POST" action="withdrawmoney/">{% csrf_token %}
-            <input style="float:right;" name="amount" placeholder="$$withdraw amount">
-            <button style="float:right; position: relative;  left:70%;" class="button-large">Submit</button>
+            <input style="position-absolute; top:10px margin-top:-40px; float:right;"  name="amount" placeholder="$$withdraw amount">
+            <button style="float:left; position: relative;  left:.1%;" class="button-large">Submit</button>
         </form>
 </div>
 {% endblock content %}

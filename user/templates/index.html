@@ -44,14 +44,14 @@
 									<!-- Banner Copy -->
 									{% if user.is_authenticated %}
 									<p method="POST" name="username">Welcome {{user.username}}</p>
-										<div style="position:absolute; right:10px; float:right;">
+										<div style="position:absolute; left:70%; top:23%; float:right;">
 											<p style="font-size:95%;">You are logged in!</p>
 											<p>Click <a href="/logout"> here </a> to logout</p>
 										</div>
 
 										<p>Available Balance: <strong style="font-weight:bolder;">$ {{balance}}</strong> </p>
 											<a href="deposit/" class="button-large">Deposit!</a>
-									<div style="float:right; position:relative; left:150px;"><a href="withdraw/" class="button-large">Withdraw!</a></div>
+									<div style=" position:relative; left:1%;"><a href="withdraw/" class="button-large">Withdraw!</a></div>
 									{% else %}
 									<h1 style="font-size:40px;">Click <a style="color:red;" href="/login">here</a> to login or register!</h1>
 									{% endif %}
